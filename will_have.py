@@ -13,7 +13,6 @@ def weather_condition(place, interval):
     print(forecaster.will_have_rain())
     print(forecaster.will_be_rainy_at(timestamps.tomorrow(12)))
     print(forecaster.will_be_stormy_at(timestamps.tomorrow(12)))
-    print(forecaster.will_be_earth)
 
 weather_condition('Bauchi','3h')
 

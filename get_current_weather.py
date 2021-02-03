@@ -18,11 +18,13 @@ def weather_status(place):
     
     # creating an object of the weather obeservation 
     weather = weather_observation.weather
+    
 
+    # status and detailed_status method call
     status = weather.status
     detailed_status = weather.detailed_status
 
-    return [status, detailed_status]
+    return [status, detailed_status] # value return
 
 # declaring function to accept (place) as an argument and return its weather info
 # like humidity, clouds.
@@ -39,4 +41,4 @@ def weather_info(place):
     # gets wind speed in kilometer per hour form
     wind = weather.wind(unit='km_hour')['speed']
 
-    return [humidity, clouds, wind]
+    return [humidity, clouds, wind] # value return
